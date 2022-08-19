@@ -1,0 +1,6 @@
+numpy
+tensorflow
+tqdm
+mlflow
+pandas
+PyYAML
