@@ -4,3 +4,4 @@ tqdm
 mlflow
 pandas
 PyYAML
+-e .

@@ -1,7 +1,79 @@
-name: MLFlow-app
-
-conda_env: conda.yaml
-
-entry_points:
-  main:
-    command: "python main.py"
+[2022-08-21 04:01:12,771: INFO: stage__01__get__data]: 
+***************************
+[2022-08-21 04:01:12,771: INFO: stage__01__get__data]: >>>>>>>>>>> stage   DATA LOAD   started <<<<<<<<<<
+[2022-08-21 04:01:12,773: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-21 04:01:12,775: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-21 04:01:12,775: WARNING: stage__01__get__data]: hey
+[2022-08-21 04:01:12,775: INFO: stage__01__get__data]: >>>>>>>>> stage  DATA LOAD   completed <<<<<<<<<<<
+[2022-08-21 04:01:41,402: INFO: stage__01__get__data]: 
+***************************
+[2022-08-21 04:01:41,402: INFO: stage__01__get__data]: >>>>>>>>>>> stage   DATA LOAD   started <<<<<<<<<<
+[2022-08-21 04:01:41,404: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-21 04:01:41,406: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-21 04:01:41,406: WARNING: stage__01__get__data]: hey
+[2022-08-21 04:01:41,406: INFO: stage__01__get__data]: >>>>>>>>> stage  DATA LOAD   completed <<<<<<<<<<<
+[2022-08-21 04:06:38,617: INFO: stage__01__get__data]: 
+***************************
+[2022-08-21 04:06:38,617: INFO: stage__01__get__data]: >>>>>>>>>>> stage   DATA LOAD   started <<<<<<<<<<
+[2022-08-21 04:06:38,620: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-21 04:06:38,621: INFO: common]: created directory at: d
+[2022-08-21 04:06:38,621: INFO: common]: created directory at: a
+[2022-08-21 04:06:38,621: INFO: common]: created directory at: t
+[2022-08-21 04:06:38,624: INFO: common]: created directory at: a
+[2022-08-21 04:06:38,626: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-21 04:06:38,626: WARNING: stage__01__get__data]: hey
+[2022-08-21 04:06:38,626: INFO: stage__01__get__data]: >>>>>>>>> stage  DATA LOAD   completed <<<<<<<<<<<
+[2022-08-21 04:09:25,256: INFO: stage__01__get__data]: 
+***************************
+[2022-08-21 04:09:25,256: INFO: stage__01__get__data]: >>>>>>>>>>> stage   DATA LOAD   started <<<<<<<<<<
+[2022-08-21 04:09:25,259: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-21 04:09:25,259: ERROR: stage__01__get__data]: name 'path' is not defined
+Traceback (most recent call last):
+  File "src/stage__01__get__data.py", line 38, in <module>
+    main(config_path = parsed_args.config, params_path = parsed_args.params)
+  File "src/stage__01__get__data.py", line 22, in main
+    create_directories(local_dir)
+  File "c:\users\asus\downloads\mlflow-cnn-dogcat\mlflow-cnn-dogcat\src\utils\common.py", line 22, in create_directories
+    os.makedirs(path, exist_ok=True)
+NameError: name 'path' is not defined
+[2022-08-21 04:09:51,541: INFO: stage__01__get__data]: 
+***************************
+[2022-08-21 04:09:51,541: INFO: stage__01__get__data]: >>>>>>>>>>> stage   DATA LOAD   started <<<<<<<<<<
+[2022-08-21 04:09:51,543: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-21 04:09:51,543: ERROR: stage__01__get__data]: name 'path' is not defined
+Traceback (most recent call last):
+  File "src/stage__01__get__data.py", line 38, in <module>
+    main(config_path = parsed_args.config, params_path = parsed_args.params)
+  File "src/stage__01__get__data.py", line 22, in main
+    create_directories(local_dir)
+  File "c:\users\asus\downloads\mlflow-cnn-dogcat\mlflow-cnn-dogcat\src\utils\common.py", line 22, in create_directories
+    os.makedirs(path, exist_ok=True)
+NameError: name 'path' is not defined
+[2022-08-21 04:10:36,422: INFO: stage__01__get__data]: 
+***************************
+[2022-08-21 04:10:36,423: INFO: stage__01__get__data]: >>>>>>>>>>> stage   DATA LOAD   started <<<<<<<<<<
+[2022-08-21 04:10:36,424: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-21 04:10:36,424: ERROR: stage__01__get__data]: name 'path' is not defined
+Traceback (most recent call last):
+  File "src/stage__01__get__data.py", line 38, in <module>
+    main(config_path = parsed_args.config, params_path = parsed_args.params)
+  File "src/stage__01__get__data.py", line 22, in main
+    create_directories(local_dir)
+  File "c:\users\asus\downloads\mlflow-cnn-dogcat\mlflow-cnn-dogcat\src\utils\common.py", line 23, in create_directories
+    logging.info(f"created directory at: {path}")
+NameError: name 'path' is not defined
+[2022-08-21 04:11:03,076: INFO: stage__01__get__data]: 
+***************************
+[2022-08-21 04:11:03,077: INFO: stage__01__get__data]: >>>>>>>>>>> stage   DATA LOAD   started <<<<<<<<<<
+[2022-08-21 04:11:03,078: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-21 04:11:03,078: INFO: common]: created directory at: data
+[2022-08-21 04:11:03,079: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-21 04:11:03,079: WARNING: stage__01__get__data]: hey
+[2022-08-21 04:11:03,080: INFO: stage__01__get__data]: >>>>>>>>> stage  DATA LOAD   completed <<<<<<<<<<<
+[2022-08-21 04:17:56,985: INFO: stage__01__get__data]: 
+***************************
+[2022-08-21 04:17:56,985: INFO: stage__01__get__data]: >>>>>>>>>>> stage   DATA LOAD   started <<<<<<<<<<
+[2022-08-21 04:17:56,986: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-21 04:17:56,987: INFO: common]: created directory at: data
+[2022-08-21 04:17:56,988: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-21 04:17:56,988: INFO: stage__01__get__data]: >>>>>>>>> stage  DATA LOAD   completed <<<<<<<<<<<

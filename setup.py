@@ -1,6 +1,6 @@
 from setuptools import setup
 
-with open("READ.md", "r", encoding = "utf-8") as f:
+with open("README.md", "r", encoding = "utf-8") as f:
     long_description = f.read()
 
 REPO_NAME = "mlflow-project-template"
@@ -15,7 +15,7 @@ setup(
     description = "a small description for MLFlow app",
     long_description = "long_description",
     long_description_content_type = "text/markdown",
-    url = f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}"
+    url = f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
     author_email = "isingh.abhishek10@gmail.com",
     packages = [SRC_REPO],
     License = "MIT",
