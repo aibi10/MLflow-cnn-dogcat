@@ -89,3 +89,4 @@ dependencies:
       - werkzeug==2.2.2
       - wrapt==1.14.1
       - zipp==3.8.1
+      - Pillow==9.2.0

@@ -129,4 +129,6 @@ dmypy.json
 .pyre/
 mlruns/
 data.zip
-running_logs.log
+PetImages/
+bad_data
+logs/running_logs.log

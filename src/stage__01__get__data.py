@@ -4,6 +4,7 @@ import shutil
 from tqdm import tqdm
 import logging
 from src.utils.common import read_yaml, create_directories
+from src.utils.data_mgmt import validate_image
 import random
 
 STAGE = "DATA LOAD"
@@ -22,6 +23,8 @@ def main(config_path):
     create_directories(local_dir)                       # a folder is created with the name 'data'
     data_file = config['data']['file_name']
     data_file_path = os.path.join(local_dir, data_file)
+
+    validate_image(config)
 
 if __name__ == "__main__":
     args = argparse.ArgumentParser()
