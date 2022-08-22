@@ -4,7 +4,9 @@ template for mlflow
 
 # create environment (bash)
 
+```bash
 conda create --prefix ./env python=3.7 -y
+```
 
 # conda activate environment(bash)
 
