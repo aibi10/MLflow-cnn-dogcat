@@ -8,7 +8,7 @@ from src.utils.model import log_model_summary
 import random
 import tensorflow as tf
 
-STAGE = "STAGE_NAME"
+STAGE = "INITIAL MODEL CREATION"
 
 logging.basicConfig (
     filename = os.path.join("logs", "running_logs.log"),

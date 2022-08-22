@@ -5,8 +5,9 @@ from tqdm import tqdm
 import logging
 from src.utils.common import read_yaml, create_directories
 import random
+import mlflow
 
-STAGE = "STAGE_NAME"
+STAGE = "MAIN"
 
 logging.basicConfig (
     filename = os.path.join("logs", "running_logs.log"),
@@ -16,23 +17,17 @@ logging.basicConfig (
 )
 
 
-def main(config_path, params_path):
-    config = read_yaml(config_path)
-    params = read_yaml(config_path)
-
-    pass
-
+def main():
+    with mlflow.start_run() as run:
+        mlflow.run(".", "get_data", use_conda = False)
+        mlflow.run(".", "base_model_creation", use_conda = False)
 
 if __name__ == "__main__":
-    args = argparse.ArgumentParser()
-    args.add_argument("--config", "-c", default = "configs/config.yaml")
-    args.add_argument("--params", "-p", default = "params.yaml")
-    parsed_args = args.parse_args()
 
     try:
         logging.info("\n***************************")
         logging.info(f">>>>>>>>>>> stage   {STAGE}   started <<<<<<<<<<")
-        main(config_path = parsed_args.config, params_path = parsed_args.params)
+        main()
         logging.info(f">>>>>>>>> stage  {STAGE}   completed <<<<<<<<<<<")
     except Exception as e:
         logging.exception(e)

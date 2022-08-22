@@ -132,3 +132,4 @@ data.zip
 PetImages/
 bad_data
 logs/running_logs.log
+data/model/init_model.h5
