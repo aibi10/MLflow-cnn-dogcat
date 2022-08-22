@@ -17,3 +17,15 @@ pip install -r requirements.txt
 # create conda.yaml(bash)
 
 conda env export > conda.yaml
+
+# command to run MLproject file
+
+mlflow run . --no-conda
+
+# run any specific entry point
+
+mlflow run . -e get_data --no-conda
+
+# to run with a different configuration
+
+mlflow run . -e get_data -P config=configs/name_of_config_file.yaml --no-conda
