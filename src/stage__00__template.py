@@ -23,7 +23,7 @@ def main(config_path, params_path):
     pass
 
 
-if name == "__main__":
+if __name__ == "__main__":
     args = argparse.ArgumentParser()
     args.add_argument("--config", "-c", default = "configs/config.yaml")
     args.add_argument("--params", "-p", default = "params.yaml")
