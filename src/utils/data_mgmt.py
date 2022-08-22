@@ -25,4 +25,5 @@ def validate_image(config: dict) -> None:
                     shutil.move(path_to_images, BAD_DATA_DIR)
             except Exception as e:
                 logging.info(f"{path_to_images} is bad image, it is being moved to {BAD_DATA_DIR}")
+                logging.exception(e)
                 shutil.move(path_to_images, BAD_DATA_DIR)
