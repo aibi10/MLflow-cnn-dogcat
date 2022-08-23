@@ -6,6 +6,7 @@ import logging
 from src.utils.common import read_yaml, create_directories
 import random
 import tensorflow as tf
+import mlflow
 
 STAGE = "Training"
 
@@ -84,6 +85,9 @@ def main(config_path):
         logging.info("error occured during saving of model")
         logging.exception(e)
     
+    with mlflow.start_run() as run:
+        mlflow.log_params(params)
+        mlflow.keras.log_model(classifier, "model")
 
 if __name__ == "__main__":
     args = argparse.ArgumentParser()
